@@ -1,7 +1,9 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: { .Release.Name}-{ .Chart.Name}-es
+  name: es
+  labels:
+    app: { .Release.Name}-{ .Chart.Name}
 spec:
   serviceName: { .Release.Name}-{ .Chart.Name}-service
   replicas: { .Values.replicaCount}
