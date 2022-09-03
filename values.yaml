@@ -1,4 +1,5 @@
-replicaCount: 3
 image:
-  repository: docker.elastic.co/elasticsearch/elasticsearch
-  tag: 7.5.0
+  repository: tomcat
+  tag: latest
+
+replicaCount: 1
