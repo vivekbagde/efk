@@ -2,7 +2,7 @@ image:
   repository: tomcat
   tag: latest
 
-replicaCount: $replicaCount
+replicaCount: 1
 
 service:
   type: ClusterIP
